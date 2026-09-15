@@ -1,40 +1,87 @@
-# Beecrowd Solutions
+# Competitive Programming Solutions
 
-This repository contains my solutions for competitive programming problems from the [Beecrowd](https://www.beecrowd.com.br/) platform (formerly URI Online Judge). It serves as a comprehensive record of my progress in algorithms, data structures, and various programming paradigms.
+This repository contains my solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/) and [Codeforces](https://codeforces.com/). It serves as a record of my progress in problem-solving, algorithms, data structures, and the C, C++, and Python languages.
 
-While the current focus is on uploading new challenges, this repository also includes legacy solutions from my early stages of learning the C language.
+Some of the Beecrowd submissions are legacy solutions from my early stages of learning C. The repository is now expanding to include Codeforces problems as well.
 
----
+## Current progress
 
-## Languages Used
+The repository currently contains **174 solution files**:
 
-I am primarily using the following languages for my solutions. The language used for a specific solution will be indicated by the file extension.
+| Platform | Solutions | Languages |
+| --- | ---: | --- |
+| Beecrowd | 171 | C, C++, Python |
+| Codeforces | 3 | C++ |
 
-* **C**
-* **C++**
-* **Python**
+By language:
 
-    * `AD-HOC`: General logic and simulation problems.
-    * `Beginner`: Basic syntax and logic challenges.
-    * `Mathematics`: Number theory, geometry, and formula-based problems.
-    * `Strings`: Text processing and pattern matching.
+- **C:** 135 solutions
+- **C++:** 35 solutions
+- **Python:** 4 solutions
 
+The Codeforces directory also includes a reusable C++ template, which is not counted as a solution.
 
-## Usage
+## Repository structure
 
-To run the solutions locally, you will need the appropriate compiler or interpreter for each language, using 'gcc' for C lang, 'g++' for C++ lang and 'python3' for Python lang.
-
-You can clone this repository to view the solutions locally:
-```bash
-git clone [https://github.com/larissagondim/Beecrowds.git](https://github.com/larissagondim/Beecrowds.git)
+```text
+.
+├── Beecrowds/
+│   ├── C/
+│   │   ├── AD-HOC/
+│   │   ├── Beginner/
+│   │   ├── Mathematics/
+│   │   └── Strings/
+│   ├── C++/
+│   │   ├── Beginner/
+│   │   ├── Mathematics/
+│   │   └── Strings/
+│   └── python/
+│       ├── Beginner/
+│       ├── Mathematics/
+│       └── Strings/
+└── codeforces/
+    ├── 1A.cpp
+    ├── 71A.cpp
+    ├── 282A.cpp
+    └── template.cpp
 ```
 
-**Disclaimer:** These solutions are intended for educational and reference purposes. Please adhere to the Beecrowd honor code and avoid submitting copied code. The best way to learn is by tackling the challenges yourself!
+Beecrowd solutions are grouped by language and problem category. Codeforces solutions are named after their problem ID.
+
+## Running a solution
+
+Clone the repository:
+
+```bash
+git clone https://github.com/larissagondim/competitiveProgramming.git
+cd competitiveProgramming
+```
+
+Then use the appropriate compiler or interpreter. For example:
+
+```bash
+# C
+gcc Beecrowds/C/Beginner/1000.c -o solution
+./solution
+
+# C++
+g++ -std=c++17 codeforces/1A.cpp -o solution
+./solution
+
+# Python
+python3 Beecrowds/python/Beginner/1145.py
+```
+
+Input should be provided through standard input, following the statement for each problem.
+
+## Disclaimer
+
+These solutions are intended for study and reference. Try solving each problem yourself before consulting an existing solution, and follow the rules of the corresponding platform.
 
 ## Contributing
 
-This is a personal repository, but I'm open to suggestions! If you find a bug in one of my solutions or have a more efficient way to solve a problem, feel free to open an **Issue** to discuss it.
+This is a personal repository, but suggestions are welcome. If you find a bug or have a more efficient approach, feel free to open an issue.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

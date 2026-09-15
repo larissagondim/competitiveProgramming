@@ -6,17 +6,17 @@ Some of the Beecrowd submissions are legacy solutions from my early stages of le
 
 ## Current progress
 
-The repository currently contains **174 solution files**:
+The repository currently contains **178 solution files**:
 
 | Platform | Solutions | Languages |
 | --- | ---: | --- |
 | Beecrowd | 171 | C, C++, Python |
-| Codeforces | 3 | C++ |
+| Codeforces | 7 | C++ |
 
 By language:
 
 - **C:** 135 solutions
-- **C++:** 35 solutions
+- **C++:** 39 solutions
 - **Python:** 4 solutions
 
 The Codeforces directory also includes a reusable C++ template, which is not counted as a solution.
@@ -39,10 +39,14 @@ The Codeforces directory also includes a reusable C++ template, which is not cou
 │       ├── Beginner/
 │       ├── Mathematics/
 │       └── Strings/
-└── codeforces/
+└── CodeForces/
     ├── 1A.cpp
+    ├── 41A.cpp
     ├── 71A.cpp
+    ├── 131A.cpp
     ├── 282A.cpp
+    ├── 546A.cpp
+    ├── 977A.cpp
     └── template.cpp
 ```
 
@@ -65,7 +69,7 @@ gcc Beecrowds/C/Beginner/1000.c -o solution
 ./solution
 
 # C++
-g++ -std=c++17 codeforces/1A.cpp -o solution
+g++ -std=c++17 CodeForces/1A.cpp -o solution
 ./solution
 
 # Python

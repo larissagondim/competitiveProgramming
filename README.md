@@ -6,18 +6,18 @@ Some of the Beecrowd submissions are legacy solutions from my early stages of le
 
 ## Current progress
 
-The repository currently contains **178 solution files**:
+The repository currently contains **180 solution files**:
 
 | Platform | Solutions | Languages |
 | --- | ---: | --- |
 | Beecrowd | 171 | C, C++, Python |
-| Codeforces | 7 | C++ |
+| Codeforces | 9 | C++, Python |
 
 By language:
 
 - **C:** 135 solutions
-- **C++:** 39 solutions
-- **Python:** 4 solutions
+- **C++:** 40 solutions
+- **Python:** 5 solutions
 
 The Codeforces directory also includes a reusable C++ template, which is not counted as a solution.
 
@@ -44,6 +44,8 @@ The Codeforces directory also includes a reusable C++ template, which is not cou
     ├── 41A.cpp
     ├── 71A.cpp
     ├── 131A.cpp
+    ├── 271A.cpp
+    ├── 271A.py
     ├── 282A.cpp
     ├── 546A.cpp
     ├── 977A.cpp

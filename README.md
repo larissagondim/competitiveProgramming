@@ -1,25 +1,24 @@
 # Competitive Programming Solutions
 
-This repository contains my solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/) and [Codeforces](https://codeforces.com/). It serves as a record of my progress in problem-solving, algorithms, data structures, and the C, C++, and Python languages.
-
-Some of the Beecrowd submissions are legacy solutions from my early stages of learning C. The repository is now expanding to include Codeforces problems as well.
+This repository contains solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/), [Codeforces](https://codeforces.com/), and the CodeFem contest collection. It is also a record of practice with algorithms, data structures, and the C, C++, and Python languages.
 
 ## Current progress
 
-The repository currently contains **180 solution files**:
+The repository currently contains **184 solution files**, plus one reusable C++ template:
 
-| Platform | Solutions | Languages |
+| Collection | Solutions | Languages |
 | --- | ---: | --- |
 | Beecrowd | 171 | C, C++, Python |
 | Codeforces | 9 | C++, Python |
+| CodeFem | 4 | C++ |
 
 By language:
 
 - **C:** 135 solutions
-- **C++:** 40 solutions
+- **C++:** 44 solutions
 - **Python:** 5 solutions
 
-The Codeforces directory also includes a reusable C++ template, which is not counted as a solution.
+The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not included in these counts.
 
 ## Repository structure
 
@@ -35,24 +34,37 @@ The Codeforces directory also includes a reusable C++ template, which is not cou
 │   │   ├── Beginner/
 │   │   ├── Mathematics/
 │   │   └── Strings/
-│   └── python/
-│       ├── Beginner/
-│       ├── Mathematics/
-│       └── Strings/
-└── CodeForces/
-    ├── 1A.cpp
-    ├── 41A.cpp
-    ├── 71A.cpp
-    ├── 131A.cpp
-    ├── 271A.cpp
-    ├── 271A.py
-    ├── 282A.cpp
-    ├── 546A.cpp
-    ├── 977A.cpp
-    └── template.cpp
+│   ├── python/
+│   │   ├── Beginner/
+│   │   ├── Mathematics/
+│   │   └── Strings/
+│   └── README.md
+├── CodeForces/
+│   ├── 1A.cpp
+│   ├── 41A.cpp
+│   ├── 71A.cpp
+│   ├── 131A.cpp
+│   ├── 271A.cpp
+│   ├── 271A.py
+│   ├── 282A.cpp
+│   ├── 546A.cpp
+│   ├── 977A.cpp
+│   ├── README.md
+│   └── template.cpp
+├── Other/
+│   └── CodeFem/
+│       ├── D.cpp
+│       ├── F.cpp
+│       ├── G.cpp
+│       ├── I.cpp
+│       └── README.md
+├── LICENSE
+└── README.md
 ```
 
-Beecrowd solutions are grouped by language and problem category. Codeforces solutions are named after their problem ID.
+- [`Beecrowds/README.md`](Beecrowds/README.md) documents the Beecrowd solutions by problem, language, and topic.
+- [`CodeForces/README.md`](CodeForces/README.md) lists the Codeforces problems and explains how to run them.
+- [`Other/CodeFem/README.md`](Other/CodeFem/README.md) documents the four CodeFem contest problems.
 
 ## Running a solution
 
@@ -63,22 +75,22 @@ git clone https://github.com/larissagondim/competitiveProgramming.git
 cd competitiveProgramming
 ```
 
-Then use the appropriate compiler or interpreter. For example:
+Each solution is standalone and reads from standard input. Use the appropriate compiler or interpreter. For example:
 
 ```bash
 # C
-gcc Beecrowds/C/Beginner/1000.c -o solution
-./solution
+gcc -std=c11 -O2 -Wall Beecrowds/C/Beginner/1000.c -o solution
+./solution < input.txt
 
 # C++
-g++ -std=c++17 CodeForces/1A.cpp -o solution
-./solution
+g++ -std=c++17 -O2 -Wall CodeForces/1A.cpp -o solution
+./solution < input.txt
 
 # Python
-python3 Beecrowds/python/Beginner/1145.py
+python3 Beecrowds/python/Beginner/1145.py < input.txt
 ```
 
-Input should be provided through standard input, following the statement for each problem.
+Input and output follow the statement for each problem.
 
 ## Disclaimer
 

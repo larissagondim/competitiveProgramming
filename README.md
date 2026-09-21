@@ -4,18 +4,18 @@ This repository contains solutions to competitive programming problems from [Bee
 
 ## Current progress
 
-The repository currently contains **184 solution files**, plus one reusable C++ template:
+The repository currently contains **186 solution files**, plus one reusable C++ template:
 
 | Collection | Solutions | Languages |
 | --- | ---: | --- |
 | Beecrowd | 171 | C, C++, Python |
-| Codeforces | 9 | C++, Python |
+| Codeforces | 11 | C++, Python |
 | CodeFem | 4 | C++ |
 
 By language:
 
 - **C:** 135 solutions
-- **C++:** 44 solutions
+- **C++:** 46 solutions
 - **Python:** 5 solutions
 
 The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not included in these counts.
@@ -43,11 +43,13 @@ The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not 
 │   ├── 1A.cpp
 │   ├── 41A.cpp
 │   ├── 71A.cpp
+│   ├── 112A.cpp
 │   ├── 131A.cpp
 │   ├── 271A.cpp
 │   ├── 271A.py
 │   ├── 282A.cpp
 │   ├── 546A.cpp
+│   ├── 677A.cpp
 │   ├── 977A.cpp
 │   ├── README.md
 │   └── template.cpp

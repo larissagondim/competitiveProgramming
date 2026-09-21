@@ -1,21 +1,22 @@
 # Competitive Programming Solutions
 
-This repository contains solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/), [Codeforces](https://codeforces.com/), and the CodeFem contest collection. It is also a record of practice with algorithms, data structures, and the C, C++, and Python languages.
+This repository contains solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/), [Codeforces](https://codeforces.com/), [CSES](https://cses.fi/problemset/), and the CodeFem contest collection. It is also a record of practice with algorithms, data structures, and the C, C++, and Python languages.
 
 ## Current progress
 
-The repository currently contains **186 solution files**, plus one reusable C++ template:
+The repository currently contains **197 solution files**, plus one reusable C++ template:
 
 | Collection | Solutions | Languages |
 | --- | ---: | --- |
 | Beecrowd | 171 | C, C++, Python |
-| Codeforces | 11 | C++, Python |
+| Codeforces | 17 | C++, Python |
+| CSES | 5 | C++ |
 | CodeFem | 4 | C++ |
 
 By language:
 
 - **C:** 135 solutions
-- **C++:** 46 solutions
+- **C++:** 57 solutions
 - **Python:** 5 solutions
 
 The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not included in these counts.
@@ -45,14 +46,28 @@ The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not 
 │   ├── 71A.cpp
 │   ├── 112A.cpp
 │   ├── 131A.cpp
+│   ├── 1374B.cpp
+│   ├── 1475A.cpp
+│   ├── 2266.cpp
+│   ├── 236A.cpp
 │   ├── 271A.cpp
 │   ├── 271A.py
 │   ├── 282A.cpp
+│   ├── 467A.cpp
 │   ├── 546A.cpp
 │   ├── 677A.cpp
+│   ├── 703A.cpp
 │   ├── 977A.cpp
+│   ├── WEEK.md
 │   ├── README.md
 │   └── template.cpp
+├── CSES/
+│   ├── increasing-array.cpp
+│   ├── missing-number.cpp
+│   ├── permutations.cpp
+│   ├── repetitions.cpp
+│   ├── weird-algorithm.cpp
+│   └── README.md
 ├── Other/
 │   └── CodeFem/
 │       ├── D.cpp
@@ -66,6 +81,7 @@ The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not 
 
 - [`Beecrowds/README.md`](Beecrowds/README.md) documents the Beecrowd solutions by problem, language, and topic.
 - [`CodeForces/README.md`](CodeForces/README.md) lists the Codeforces problems and explains how to run them.
+- [`CSES/README.md`](CSES/README.md) lists the CSES problems and explains how to run them.
 - [`Other/CodeFem/README.md`](Other/CodeFem/README.md) documents the four CodeFem contest problems.
 
 ## Running a solution
@@ -90,6 +106,13 @@ g++ -std=c++17 -O2 -Wall CodeForces/1A.cpp -o solution
 
 # Python
 python3 Beecrowds/python/Beginner/1145.py < input.txt
+```
+
+For a CSES solution, compile and run the selected file from the repository root:
+
+```bash
+g++ -std=c++17 -O2 -Wall CSES/missing-number.cpp -o solution
+./solution < input.txt
 ```
 
 Input and output follow the statement for each problem.

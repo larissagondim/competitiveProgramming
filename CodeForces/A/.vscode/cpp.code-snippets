@@ -1,0 +1,21 @@
+{
+  "Competitive Programming Template": {
+    "scope": "cpp",
+    "prefix": "!cp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "using ll = long long;",
+      "",
+      "int main() {",
+      "    ios::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
+      "",
+      "    $0",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Template para programação competitiva em C++"
+  }
+}

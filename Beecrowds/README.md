@@ -2,6 +2,18 @@
 
 Repository containing solutions to [Beecrowd](https://www.beecrowd.com.br/) problems, organized by problem identifier, programming language, and topic.
 
+## Progress by topic and language
+
+| Topic | C | C++ | Python | Total files |
+| --- | ---: | ---: | ---: | ---: |
+| Beginner | 111 | 21 | 2 | 134 |
+| Mathematics | 9 | 10 | 1 | 20 |
+| Strings | 3 | 1 | 1 | 5 |
+| AD-HOC | 12 | 0 | 0 | 12 |
+| **Total** | **135** | **32** | **4** | **171** |
+
+Counts refer to source files, with separate implementations counted individually.
+
 ## Solutions
 
 This directory currently contains **171 solution files** covering **151 distinct problems**.
@@ -169,7 +181,7 @@ This directory currently contains **171 solution files** covering **151 distinct
 
 ## How to run
 
-The solutions have no external dependencies or specific build system.
+Run the following commands from the `Beecrowds/` directory using GCC/G++ or Python 3. Create `input.txt` with test input, or omit the redirection to enter input interactively.
 
 ### C
 
@@ -201,3 +213,5 @@ Each program reads from standard input and writes to standard output according t
 
 These solutions are intended for study and reference. Try solving each problem yourself before consulting an existing solution, and follow the rules of the platform.
 
+
+[Repository overview](../README.md) · [Documentation tracker](../docs/README.md)

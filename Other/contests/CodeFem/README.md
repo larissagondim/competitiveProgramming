@@ -1,15 +1,15 @@
-# Online Contest — Solved Problems
+# CodeFem — Contest Problems
 
-Solutions for problems D, F, G, and I from a competitive programming contest.
+This collection contains **4 C++ source files**, for problems D, F, G, and I from a competitive programming contest. Submission verdicts are not tracked here.
 
 ## Problems
 
-| Problem | Name | Main topic |
-|---|---|---|
-| [D](#d--lighting-a-new-playground) | Lighting a New Playground | Pigeonhole principle |
-| [F](#f--cafe-hopping) | Cafe Hopping | Sliding window |
-| [G](#g--macaron-conveyor) | Macaron Conveyor | Simulation and prefix sums |
-| [I](#i--fruit-punch) | Fruit Punch | Combinations |
+| Problem | Name | Main topic | Source |
+| --- | --- | --- | --- |
+| [D](#d--lighting-a-new-playground) | Lighting a New Playground | Pigeonhole principle | [`D.cpp`](D.cpp) |
+| [F](#f--cafe-hopping) | Cafe Hopping | Sliding window | [`F.cpp`](F.cpp) |
+| [G](#g--macaron-conveyor) | Macaron Conveyor | Simulation and prefix sums | [`G.cpp`](G.cpp) |
+| [I](#i--fruit-punch) | Fruit Punch | Combinations | [`I.cpp`](I.cpp) |
 
 ---
 
@@ -218,3 +218,17 @@ Output:
 ```
 
 Each file contains the solution for the corresponding problem.
+
+## How to run
+
+Compile one file with GCC/G++ and C++17 from the repository root:
+
+```bash
+g++ -std=c++17 -O2 -Wall Other/contests/CodeFem/D.cpp -o solution
+./solution < input.txt
+```
+
+Replace `D.cpp` with the desired source file. Create `input.txt` with the problem input,
+or omit `< input.txt` to enter input directly in the terminal.
+
+[Other collections](../../README.md) · [Repository overview](../../../README.md) · [Documentation tracker](../../../docs/README.md)

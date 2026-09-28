@@ -1,88 +1,50 @@
 # Competitive Programming Solutions
 
-This repository contains solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/), [Codeforces](https://codeforces.com/), [CSES](https://cses.fi/problemset/), and the CodeFem contest collection. It is also a record of practice with algorithms, data structures, and the C, C++, and Python languages.
+This repository contains solutions to competitive programming problems from [Beecrowd](https://www.beecrowd.com.br/), [Codeforces](https://codeforces.com/), [CSES](https://cses.fi/problemset/), CodeChef, and the CodeFem contest collection. It is also a record of practice with algorithms, data structures, and the C, C++, and Python languages.
 
 ## Current progress
 
-The repository currently contains **197 solution files**, plus one reusable C++ template:
+The repository currently contains **222 problem source files**, plus one reusable C++ template. Counts include work in progress and do not imply accepted submissions.
 
-| Collection | Solutions | Languages |
-| --- | ---: | --- |
-| Beecrowd | 171 | C, C++, Python |
-| Codeforces | 17 | C++, Python |
-| CSES | 5 | C++ |
-| CodeFem | 4 | C++ |
+| Collection | Source files | Languages | Documentation |
+| --- | ---: | --- | --- |
+| Beecrowd | 171 | C, C++, Python | [README](Beecrowds/README.md) |
+| Codeforces | 36 | C++, Python | [README](CodeForces/README.md) |
+| CodeChef | 6 | C++ | [README](CodeChef/README.md) |
+| CSES | 5 | C++ | [README](CSES/README.md) |
+| CodeFem | 4 | C++ | [README](Other/contests/CodeFem/README.md) |
 
-By language:
-
-- **C:** 135 solutions
-- **C++:** 57 solutions
-- **Python:** 5 solutions
-
-The C++ template in [`CodeForces/template.cpp`](CodeForces/template.cpp) is not included in these counts.
+By language: **135 C**, **81 C++**, and **6 Python** source files.
+The C++ template in [`template.cpp`](template.cpp) is excluded.
+Multiple implementations of the same problem count as separate files.
+`CSES/permutations.cpp` is currently an unfinished implementation.
 
 ## Repository structure
 
 ```text
 .
-├── Beecrowds/
-│   ├── C/
-│   │   ├── AD-HOC/
-│   │   ├── Beginner/
-│   │   ├── Mathematics/
-│   │   └── Strings/
-│   ├── C++/
-│   │   ├── Beginner/
-│   │   ├── Mathematics/
-│   │   └── Strings/
-│   ├── python/
-│   │   ├── Beginner/
-│   │   ├── Mathematics/
-│   │   └── Strings/
-│   └── README.md
-├── CodeForces/
-│   ├── 1A.cpp
-│   ├── 41A.cpp
-│   ├── 71A.cpp
-│   ├── 112A.cpp
-│   ├── 131A.cpp
-│   ├── 1374B.cpp
-│   ├── 1475A.cpp
-│   ├── 2266.cpp
-│   ├── 236A.cpp
-│   ├── 271A.cpp
-│   ├── 271A.py
-│   ├── 282A.cpp
-│   ├── 467A.cpp
-│   ├── 546A.cpp
-│   ├── 677A.cpp
-│   ├── 703A.cpp
-│   ├── 977A.cpp
-│   ├── WEEK.md
-│   ├── README.md
-│   └── template.cpp
-├── CSES/
-│   ├── increasing-array.cpp
-│   ├── missing-number.cpp
-│   ├── permutations.cpp
-│   ├── repetitions.cpp
-│   ├── weird-algorithm.cpp
-│   └── README.md
+├── Beecrowds/           # Organized by language, then topic
+│   ├── C/              # AD-HOC, Beginner, Mathematics, Strings
+│   ├── C++/            # Beginner, Mathematics, Strings
+│   └── python/         # Beginner, Mathematics, Strings
+├── CodeForces/         # Organized by problem letter
+│   ├── A/
+│   ├── B/
+│   └── C/
+├── CodeChef/           # Six C++ problem files
+├── CSES/               # Five C++ problem files, including one in progress
 ├── Other/
-│   └── CodeFem/
-│       ├── D.cpp
-│       ├── F.cpp
-│       ├── G.cpp
-│       ├── I.cpp
-│       └── README.md
+│   └── contests/
+│       └── CodeFem/    # Problems D, F, G, and I
+├── docs/
+│   └── README.md       # Documentation coverage and pending READMEs
+├── template.cpp       # Shared C++ starter template
 ├── LICENSE
 └── README.md
 ```
 
-- [`Beecrowds/README.md`](Beecrowds/README.md) documents the Beecrowd solutions by problem, language, and topic.
-- [`CodeForces/README.md`](CodeForces/README.md) lists the Codeforces problems and explains how to run them.
-- [`CSES/README.md`](CSES/README.md) lists the CSES problems and explains how to run them.
-- [`Other/CodeFem/README.md`](Other/CodeFem/README.md) documents the four CodeFem contest problems.
+See [Other](Other/README.md) for contest collections and the
+[documentation tracker](docs/README.md) for folders without their own README.
 
 ## Running a solution
 
@@ -93,7 +55,7 @@ git clone https://github.com/larissagondim/competitiveProgramming.git
 cd competitiveProgramming
 ```
 
-Each solution is standalone and reads from standard input. Use the appropriate compiler or interpreter. For example:
+Each source file is a standalone program that reads from standard input. Install GCC/G++ for C/C++ or Python 3 for Python programs. Use the appropriate compiler or interpreter. For example:
 
 ```bash
 # C
@@ -101,7 +63,7 @@ gcc -std=c11 -O2 -Wall Beecrowds/C/Beginner/1000.c -o solution
 ./solution < input.txt
 
 # C++
-g++ -std=c++17 -O2 -Wall CodeForces/1A.cpp -o solution
+g++ -std=c++17 -O2 -Wall CodeForces/A/1A.cpp -o solution
 ./solution < input.txt
 
 # Python
@@ -115,7 +77,7 @@ g++ -std=c++17 -O2 -Wall CSES/missing-number.cpp -o solution
 ./solution < input.txt
 ```
 
-Input and output follow the statement for each problem.
+Create `input.txt` with the desired test input, or omit `< input.txt` to type input in the terminal. Input and output follow the statement for each problem.
 
 ## Disclaimer
 
